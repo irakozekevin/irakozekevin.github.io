@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Irakoze Kevin | Portfolio</title>
+  <style>
+    /* ---------- BASE ---------- */
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', 'Helvetica Neue', sans-serif;
+      background-color: #fff;
+      color: #111;
+      line-height: 1.7;
+    }
+
+    a {
+      color: #000;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      border-color: #000;
+      background-color: #000;
+      color: #fff;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      border-bottom: 2px solid #000;
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.3rem;
+    }
+
+    section {
+      max-width: 950px;
+      margin: 0 auto;
+      padding: 5rem 1.5rem;
+      border-bottom: 1px solid #ddd;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeUp 1s forwards;
+    }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ---------- NAV ---------- */
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: #fff;
+      border-bottom: 1px solid #000;
+      display: flex;
+      justify-content: center;
+      z-index: 100;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+      margin: 0;
+      padding: 1rem;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    nav a:hover {
+      color: #fff;
+      background: #000;
+      padding: 0.3rem 0.6rem;
+      border-radius: 3px;
+    }
+
+    /* ---------- HERO ---------- */
+    header {
+      text-align: center;
+      padding: 6rem 1rem 4rem;
+      animation: fadeUp 1s ease forwards;
+    }
+
+    header img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #000;
+      box-shadow: 0 0 15px rgba(0,0,0,0.15);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    header img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(0,0,0,0.3);
+    }
+
+    header h1 {
+      margin-top: 1.2rem;
+      font-size: 2.3rem;
+      letter-spacing: 1.5px;
+    }
+
+    header h3 {
+      color: #555;
+      font-weight: 400;
+      margin-top: 0.5rem;
+    }
+
+    header p {
+      margin-top: 0.8rem;
+      color: #333;
+    }
+
+    /* ---------- LISTS ---------- */
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin: 0.6rem 0;
+      font-size: 1rem;
+    }
+
+    /* ---------- CONTACTS ---------- */
+    #contact {
+      text-align: center;
+    }
+
+    #contact h2 {
+      display: block;
+      margin: 0 auto 2rem;
+      border-bottom: none;
+      font-size: 1.3rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      border-bottom: 2px solid #000;
+      width: fit-content;
+    }
+
+    .contacts {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.2rem;
+      margin-top: 2rem;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      font-size: 1rem;
+    }
+
+    .contact-item svg {
+      width: 22px;
+      height: 22px;
+      stroke: #000;
+      stroke-width: 2;
+      fill: none;
+    }
+
+    .contact-item a {
+      border: none;
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #555;
+      border-top: 1px solid #000;
+    }
+
+    footer a {
+      color: #000;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 768px) {
+      header img {
+        width: 150px;
+        height: 150px;
+      }
+
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      section {
+        padding: 3rem 1rem;
+      }
+
+      .contact-item {
+        flex-direction: column;
+        gap: 0.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#languages">Languages</a></li>
+      <li><a href="#cv">CV</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <header>
+    <img src="IMG-20251001-WA0002.jpg" alt="Irakoze Kevin">
+    <h1>Irakoze Kevin</h1>
+    <h3>Junior Software Developer</h3>
+    <p><a href="mailto:kevinranda1234@gmail.com">kevinranda1234@gmail.com</a> • Kigali, Rwanda</p>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate Junior Software Developer with a strong foundation in Python, SQL, and Web Development.  
+      A Junior Software Developer with an understanding of Python, SQL, and Web Development.
+
+Eager to contribute to significant projects while applying technical and problem-solving skills.
+
+Seeking to join a dynamic team where I can apply my knowledge, expand my horizons, and gain experience in Software Development.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+      <li><strong>Backend:</strong> PHP, Python</li>
+      <li><strong>Database:</strong> Design, Management & Security</li>
+      <li><strong>Web Hosting:</strong> Server Setup & Deployment</li>
+      <li><strong>Networking:</strong> Windows Server & Configuration</li>
+    </ul>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li>Computer Science — Harvard University</li>
+      <li>Software Development — Natcom</li>
+      <li>Fintech — Alison</li>
+      <li>Kigali Hacks Hackathon — African Leadership University</li>
+    </ul>
+  </section>
+
+  <!-- Languages -->
+  <section id="languages">
+    <h2>Languages</h2>
+    <ul>
+      <li>Kinyarwanda — Native</li>
+      <li>English — Fluent</li>
+      <li>Japanese — Entry Level</li>
+    </ul>
+  </section>
+
+  <!-- CV -->
+  <section id="cv">
+    <h2>Download CV</h2>
+    <p><a href="Irakoze Kevin.pdf" download>Click here to download my CV</a></p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contacts">
+      <div class="contact-item">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.86 19.86 0 0 1 3.08 5.18 2 2 0 0 1 5 3h3a2 2 0 0 1 2 1.72 12.44 12.44 0 0 0 .65 2.73 2 2 0 0 1-.45 2.11L9.09 10.91a16 16 0 0 0 6 6l1.35-1.11a2 2 0 0 1 2.11-.45 12.44 12.44 0 0 0 2.73.65A2 2 0 0 1 22 16.92z"/></svg>
+        <a href="tel:+250790782090">+250 790 782 090</a> (WhatsApp)
+      </div>
+
+      <div class="contact-item">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>
+        <a href="mailto:kevinranda1234@gmail.com">kevinranda1234@gmail.com</a>
+      </div>
+
+      <div class="contact-item">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        Kigali, Rwanda
+      </div>
+
+      <div class="contact-item">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        <a href="https://www.instagram.com/randalk_" target="_blank">@randalk_</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Irakoze Kevin | Crafted with simplicity & elegance
+  </footer>
+
+</body>
+</html>
